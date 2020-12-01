@@ -1,0 +1,39 @@
+{
+  "name": "@pipcook/plugins-pytorch-yolov5-model-evaluate",
+  "version": "1.1.0",
+  "description": "This is the pipcook model-evaluate plugin for yolo v5 model",
+  "main": "__init__.py",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "queyue.crk<ruikuncao@gmail.com>",
+  "license": "Apache 2.0",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@types/jasmine": "^3.5.7",
+    "nyc": "14.1.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "pipcook": {
+    "category": "modelEvaluate",
+    "datatype": "image",
+    "runtime": "python"
+  },
+  "conda": {
+    "python": "3.7",
+    "dependencies": {
+      "torch": "1.6.0",
+      "torchvision": "0.7.0",
+      "Cython": "0.29.21",
+      "matplotlib": "3.3.2",
+      "numpy": "1.19.2",
+      "opencv-python-headless": "4.4.0.44",
+      "PyYAML": "5.3.1",
+      "tqdm": "4.51.0",
+      "pillow": "8.0.1"
+    }
+  }
+}
